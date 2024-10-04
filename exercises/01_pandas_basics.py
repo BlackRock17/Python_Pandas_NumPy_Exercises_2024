@@ -10,28 +10,21 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Извеждане на DataFrame
+print("Прост DataFrame:")
 print(df)
-
-# Преглед на основна информация за DataFrame
+print("\nИнформация за DataFrame:")
 print(df.info())
-
-# Извеждане на първите няколко реда
+print("\nПървите няколко реда:")
 print(df.head())
-
-# Извеждане на основни статистики
+print("\nОсновни статистики:")
 print(df.describe())
 
-print('**********************************')
-
 # Четене на данни от CSV файл
-df_from_csv = pd.read_csv('data.csv')
+df_from_csv = pd.read_csv('../data/employees.csv')
 
 print("\nДанни от CSV файл:")
 print(df_from_csv)
-
 print("\nИнформация за DataFrame от CSV:")
 print(df_from_csv.info())
-
 print("\nОсновни статистики за DataFrame от CSV:")
 print(df_from_csv.describe())
